@@ -7,7 +7,8 @@ function fourNumberSum(array, targetSum) {
             let currentSum = array[i] + array[j];
             let difference = targetSum - currentSum;
             if (difference in allPairSums) {
-                    for (const pair in allPairSums[difference]) {
+                //use for-of because we want the actual values, not the property name
+                    for (const pair of allPairSums[difference]) {
                             quadruplets.push(pair.concat([array[i], array[j]]));
                     }
                 }
