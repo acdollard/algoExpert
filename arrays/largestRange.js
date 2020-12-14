@@ -19,7 +19,7 @@ function largestRange(array) {
             }
             continue;
         }
-        else {
+        else { 
             currentRange = [sortedArray[i]];
         }
     }
@@ -27,29 +27,5 @@ function largestRange(array) {
 }
 
   console.log(largestRange([8, 4, 2, 10, 3, 6, 7, 9, 1]));
-  console.log(largestRange([
-    19,
-    -1,
-    18,
-    17,
-    2,
-    10,
-    3,
-    12,
-    5,
-    16,
-    4,
-    11,
-    8,
-    7,
-    6,
-    15,
-    12,
-    12,
-    2,
-    1,
-    6,
-    13,
-    14
-  ]))
+  console.log(largestRange([19,-1,18,17,2,10,3,12,5,16,4,11,8,7,6,15,12,12,2,1,6,13,14]))
   console.log(largestRange([1, 1, 1, 3, 4]));
