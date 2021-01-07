@@ -48,7 +48,7 @@ function minRewards(scores) {
     function expandFromLocalMinIdx(localMinIdx, scores, rewards) {
         let leftIdx = localMinIdx - 1;
         while (scores[leftIdx] > scores[leftIdx + 1] && leftIdx >= 0) {
-            rewards[leftIdx] = Math.max(rewards[leftIdx], rewards[leftIdx - 1] + 1);
+            rewards[leftIdx] = Math.max(rewards[leftIdx], rewards[leftIdx + 1] + 1);
             leftIdx --;
         }
         let rightIdx = localMinIdx + 1;
